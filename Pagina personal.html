@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio Alejandro Martínez</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="perfil">
+            <img src="fotoperfil.jpg" alt="Foto de perfil">
+            <div class="nombre">
+                <h1>Alejandro Martinez Pérez</h1>
+                <p>si lo sueñas es posible</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+
+<li><a href="blog.html">Blog</a></li>
+
+<li class="blog-contenedor">
+    <a href="#">Redes</a>
+    <div class="redes-hover">
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</li>
+
+<li class="contacto-contenedor">
+    <a href="#">Contacto</a>
+    <div class="contacto-hover">
+        <p><a href="mailto:son.ellis.131@gmail.com">📧 son.ellis.131@gmail.com</a></p>
+        <p>📱 +52 55 39504258</p>
+    </div>
+</li>
+
+        </ul>
+    </nav>
+    
+
+    <main>
+        <section class="info">
+            <h3>Sobre mi</h3>
+            <p>
+                Soy estudiante de Ingeniería en Sistemas Computacionales, próximo a finalizar mi carrera. 
+                Cuento con experiencia laboral en desarrollo de software, donde he participado en proyectos 
+                enfocados en soluciones web y aplicaciones empresariales. Me apasiona la programación, 
+                el aprendizaje continuo y la resolución de problemas mediante la tecnología. 
+                Actualmente, estoy disponible para colaborar en proyectos de desarrollo de software, 
+                aportando mis habilidades técnicas y mi compromiso profesional.
+            </p>
+        </section>
+
+        <section class="curiosidades">
+            <h3>Fortalezas como programador</h3>
+            <ul>
+                <li>No requiero de mucho tiempo para generar nuevos conocimientos.</li>
+                <li>Busco nuevas formas de hacer algo de forma efectiva y en poco tiempo.</li>
+                <li>conocimientos avanzados en programación backend.</li>
+                <li>Experiencia en desarrollo y arquitectura de información</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Alejandro Martinez Pérez 2025</p>
+        <img src="logooriginal.png" alt="Foto de logo original">
+    </footer>
+
+    <script>
+        let ultimoScroll = 0;
+        const menu = document.getElementById('menu');
+
+        window.addEventListener('scroll', () => {
+            const actualScroll = window.pageYOffset;
+
+            if (actualScroll > ultimoScroll) {
+                menu.style.top = '-60px';
+            } else {
+                menu.style.top = '0';
+            }
+
+            ultimoScroll = actualScroll;
+        });
+    </script>
+</body>
+</html>
